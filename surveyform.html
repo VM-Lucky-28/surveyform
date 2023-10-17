@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modern Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: rgb(3, 0, 95);">
+    <div class="container">
+      <h1>Customer Survey Form</h1>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" required>
+          <div class="error" id="first-name-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" required>
+          <div class="error" id="last-name-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="date-of-birth">Date of Birth *</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+          <div class="error" id="date-of-birth-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country *</label>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="USA">India</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">USA</option>
+          </select>
+          <div class="error" id="country-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Gender *</label>
+          <div class="input-group">
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+            <input type="radio" id="other" name="gender" value="other" class="checkbox-label">Other
+          <div class="error" id="gender-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="profession">Profession *</label>
+          <input type="text" id="profession" name="profession" required>
+          <div class="error" id="profession-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+          <div class="error" id="email-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number *</label>
+          <input type="tel" id="mobile" name="mobile" required>
+          <div class="error" id="mobile-error"></div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="index.js">
+      
+    </script>
+  </body>
+</html>
